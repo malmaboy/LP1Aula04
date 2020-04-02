@@ -17,6 +17,7 @@ namespace MyFirstMethod
             CountTon(3);
             CountTon(5);
             CountTo10();
+            CountTon(15,19);
         }
           
         /// <summary>
@@ -27,16 +28,31 @@ namespace MyFirstMethod
             CountTon(10);
         }
 
-        /// <summary>
-        /// This methot will print numbers from 1 to <see cref = "n"/>
-        /// </summary>
-        /// <param name="n"></param>
+    /// <summary>
+    /// This method will print numbers from 1 to <see cref = "n"/>
+    /// </summary>
+    /// <param name="n"></param>
         static void CountTon(int n)
         {
             for (int i = 1; i <=n;i++)
             {
                 Console.WriteLine(i);
             }
+        }
+
+
+/// <summary>
+/// This method will print numbers from <cref ="n1"/n to <cref="n2"/>.
+/// </summary>
+/// <param name="n1">Minimum number to print</param>
+/// <param name="n2">Maximum number to print</param>
+        static void CountTon(int n1, int n2)
+        {
+            for (int i = n1; i <=n2;i++)
+            {
+                Console.WriteLine(i);
+            }
+
         }
 
        
